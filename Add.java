@@ -66,31 +66,11 @@ public class Add {
         attrs.put("userPrincipalName", "test@163.com");
         attrs.put("sAMAccountName", uid);
         attrs.put("msDS-SupportedEncryptionTypes", "0");
-
-        /**
-         * ���ô���
-         */
         attrs.put("facsimileTelephoneNumber", "test@163.com");
-        /**
-         * Ѱ����
-         */
         attrs.put("pager", "****");
-        /**
-         * ip�绰
-         */
         attrs.put("ipPhone", homePhone);
-        /**
-         * ��ͥ�绰
-         */
         attrs.put("homePhone", homePhone);
-        /**
-         * �ƶ��绰
-         */
         attrs.put("mobile", "***********");
-
-        /**
-         * �����˻���Ϣ
-         */
         attrs.put("userAccountControl",
                 Integer.toString(UF_DONT_EXPIRE_PASSWD + UF_NORMAL_ACCOUNT + UF_PASSWD_NOTREQD));
 

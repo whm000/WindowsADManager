@@ -15,17 +15,11 @@ public class Delete {
      * @throws NamingException
      */
     public void deleteUser(String uid) throws NamingException {
-        /**
-         * ���ӵ�LDAP
-         */
+   
         LdapContext ctx = new ConnectLDAP().connectToLDAP();
 
         String userName = uid;
 
-        /**
-         * �û���·��
-         */
-        //String userDN = "CN=" + userName + "," + "CN=Users,DC=demo,DC=com";
         String userDN = "CN=" + userName + "," + "OU=aaa,DC=demo,DC=com";
         ctx.destroySubcontext(userDN);
 
